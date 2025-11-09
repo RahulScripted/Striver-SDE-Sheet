@@ -36,6 +36,14 @@ public:
             }
         }
 
+        if(setRows == true){
+            for(int i = 0;i < rows; i++) matrix[i][0] = 0;
+        }
+
+        if(setCols == true){
+            for(int j = 0;j < cols; j++) matrix[0][j] = 0;
+        }
+
 
         // Using Hasmap
         // int rows = matrix.size();
