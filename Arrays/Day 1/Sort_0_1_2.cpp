@@ -17,8 +17,8 @@ public:
                 swap(nums[mid], nums[high]);
                 high--;
             } else if(nums[mid] == 0){
-                swap(nums[lo], nums[mid]);
-                lo++;
+                swap(nums[low], nums[mid]);
+                low++;
                 mid++;
             }
             else mid++;
@@ -61,6 +61,6 @@ int main(){
     cout<<"-------------Before Sorting-------------"<<endl;
     print(nums);
     solution.sortColors(nums);
-    cot<<"-------------After Sorting-------------"<<endl;
+    cout<<"-------------After Sorting-------------"<<endl;
     print(nums);
 }
